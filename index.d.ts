@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,24 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var defineProperty = require( '@stdlib/utils-define-property' );
-
-
-// MAIN //
+import { PropertyName } from '@stdlib/types/object';
 
 /**
 * Defines a non-enumerable property.
 *
-* @param {Object} obj - object on which to define the property
-* @param {(string|symbol)} prop - property name
-* @param {*} value - value to set
+* ## Notes
+*
+* -   Non-enumerable properties are writable and configurable.
+*
+* @param obj - object on which to define the property
+* @param prop - property name
+* @param value - value to set
 *
 * @example
-* var objectKeys = require( '@stdlib/utils-keys' );
+* var objectKeys = require( `@stdlib/utils/keys` );
 *
 * var obj = {};
 *
@@ -45,16 +46,9 @@ var defineProperty = require( '@stdlib/utils-define-property' );
 * var keys = objectKeys( obj );
 * // returns []
 */
-function setNonEnumerableProperty( obj, prop, value ) {
-	defineProperty( obj, prop, {
-		'configurable': true,
-		'enumerable': false,
-		'writable': true,
-		'value': value
-	});
-}
+declare function setNonEnumerableProperty( obj: any, prop: PropertyName, value: any ): void; // tslint:disable-line: max-line-length
 
 
 // EXPORTS //
 
-module.exports = setNonEnumerableProperty;
+export = setNonEnumerableProperty;
