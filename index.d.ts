@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,25 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { PropertyName } from '@stdlib/types/object';
 
 /**
-* Define a non-enumerable property.
+* Defines a non-enumerable property.
 *
-* @module @stdlib/utils-define-nonenumerable-property
+* ## Notes
+*
+* -   Non-enumerable properties are writable and configurable.
+*
+* @param obj - object on which to define the property
+* @param prop - property name
+* @param value - value to set
 *
 * @example
-* var objectKeys = require( '@stdlib/utils-keys' );
-* var setNonEnumerableProperty = require( '@stdlib/utils-define-nonenumerable-property' );
+* var objectKeys = require( `@stdlib/utils/keys` );
 *
 * var obj = {};
 *
@@ -37,12 +46,9 @@
 * var keys = objectKeys( obj );
 * // returns []
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function setNonEnumerableProperty( obj: any, prop: PropertyName, value: any ): void; // tslint:disable-line: max-line-length
 
 
 // EXPORTS //
 
-module.exports = main;
+export = setNonEnumerableProperty;
