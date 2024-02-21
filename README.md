@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-define-nonenumerable-property/tags). For example,
+
+```javascript
 import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@v0.2.1-deno/mod.js';
 ```
 
@@ -80,7 +85,7 @@ var v = obj.foo;
 
 ```javascript
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@deno/mod.js';
-import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@v0.2.1-deno/mod.js';
+import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@deno/mod.js';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
