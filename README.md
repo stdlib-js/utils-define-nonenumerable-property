@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-define-nonenumerable-property/tags). For example,
+
+```javascript
 import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@v0.2.1-esm/index.mjs';
 ```
 
@@ -85,7 +90,7 @@ var v = obj.foo;
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@v0.2.1-esm/index.mjs';
+import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@esm/index.mjs';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
