@@ -35,38 +35,32 @@ limitations under the License.
 
 > [Define][@stdlib/utils/define-property] a **non-enumerable** property.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-define-nonenumerable-property
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-setNonEnumerableProperty = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var setNonEnumerableProperty = require( 'path/to/vendor/umd/utils-define-nonenumerable-property/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.setNonEnumerableProperty;
-})();
-</script>
+var setNonEnumerableProperty = require( '@stdlib/utils-define-nonenumerable-property' );
 ```
 
 #### setNonEnumerableProperty( obj, prop, value )
@@ -102,14 +96,9 @@ var v = obj.foo;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var objectKeys = require( '@stdlib/utils-keys' );
+var setNonEnumerableProperty = require( '@stdlib/utils-define-nonenumerable-property' );
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
@@ -126,11 +115,6 @@ var v = foo.name;
 
 var keys = objectKeys( foo );
 // returns []
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -181,7 +165,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -207,8 +191,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -227,19 +211,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-define-nonenumerable-property/main/LICENSE
 
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/umd
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-nonenumerable-read-only-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/tree/umd
+[@stdlib/utils/define-nonenumerable-read-only-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor
 
-[@stdlib/utils/define-nonenumerable-read-only-property]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-property/tree/umd
+[@stdlib/utils/define-nonenumerable-read-only-property]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-property
 
-[@stdlib/utils/define-nonenumerable-read-write-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-read-write-accessor/tree/umd
+[@stdlib/utils/define-nonenumerable-read-write-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-read-write-accessor
 
-[@stdlib/utils/define-nonenumerable-write-only-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-write-only-accessor/tree/umd
+[@stdlib/utils/define-nonenumerable-write-only-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-write-only-accessor
 
-[@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils-define-read-only-property/tree/umd
+[@stdlib/utils/define-read-only-property]: https://github.com/stdlib-js/utils-define-read-only-property
 
 <!-- </related-links> -->
 
