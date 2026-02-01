@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@esm/index.mjs';
+import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@v0.2.3-esm/index.mjs';
 ```
 
 #### setNonEnumerableProperty( obj, prop, value )
@@ -85,7 +85,7 @@ var v = obj.foo;
 <script type="module">
 
 import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs';
-import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@esm/index.mjs';
+import setNonEnumerableProperty from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-property@v0.2.3-esm/index.mjs';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
